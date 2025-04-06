@@ -13,15 +13,15 @@ void Registers::setPair(uint8_t* high, uint8_t* low, uint16_t value) {
 }
 
 uint16_t Registers::readAF() {return readPair(A, F);};
-void Registers::setAF(uint16_t value) {return setPair(&A, &F, value);}
+void Registers::setAF(uint16_t value) {setPair(&A, &F, value);}
 
 uint16_t Registers::readBC() {return readPair(B, C);};
-void Registers::setBC(uint16_t value) {return setPair(&B, &C, value);}
+void Registers::setBC(uint16_t value) {setPair(&B, &C, value);}
 
 
 uint16_t Registers::readDE() {return readPair(D, E);};
-void Registers::setDE(uint16_t value) {return setPair(&D, &E, value);}
+void Registers::setDE(uint16_t value) {setPair(&D, &E, value);}
 
 uint16_t Registers::readHL() {return readPair(H, L);};
-void Registers::setHL(uint16_t value) {return setPair(&H, &L, value);}
+void Registers::setHL(uint16_t value) {setPair(&H, &L, value);}
 
